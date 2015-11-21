@@ -32,7 +32,7 @@ Scenario: restrict to movies with 'PG' or 'R' ratings
   And I uncheck "ratings[G]"
   And I uncheck "ratings[PG-13]"
   And I press "Refresh"
-  Then I should see "The Terminator" 
+  Then I should see "The Terminator"
   And I should see "When Harry Met Sally"
   And I should see "Amelie"
   And I should see "The Incredibles"
