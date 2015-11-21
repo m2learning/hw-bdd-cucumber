@@ -34,6 +34,6 @@ end
 Then /I should see all the movies/ do
   # Make sure that all the movies in the app are visible in the table
   within('table#movies') do
-    expect(page).to have_xpath(".//tr", :count => 11)
+    expect(page).to have_xpath(".//tr", :count => Movie.count+1)
   end
 end
